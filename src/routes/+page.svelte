@@ -65,7 +65,7 @@
             </DeviceDetector>
             <DeviceDetector showInDevice="desktop">
                 <a
-                    href="/presenter/download"
+                    href="/download"
                     class=
                     "transition-all duration-[100ms] relative
                     border border-white rounded-full h-10
