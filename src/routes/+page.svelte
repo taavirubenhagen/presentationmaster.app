@@ -13,8 +13,7 @@
 
 
 <svelte:head>
-    <title>Presentation Master 2</title>
-    <link rel="icon" href="/presenter/square_icon.png" />
+    <title>Get Presentation Master 2</title>
     <meta name="description" content="Upgraded Presentation Companion"/>
 </svelte:head>
 
@@ -25,7 +24,7 @@
 />
 
 
-<main class="overflow-x-hidden overflow-y-scroll min-h-screen bg-black text-center text-white font-[Lexend]">
+<main class="overflow-x-hidden overflow-y-scroll min-h-screen bg-black text-center text-white">
     {#if downloadVisible}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -43,7 +42,7 @@
         </div>
     {/if}
     <div class="fixed z-40 top-0 w-full h-24 px-8 flex justify-between items-center">
-        <a href="https://taavi.rubenhagen.com" class="text-[2rem] md:text-[2.5rem] font-bold" style="font-family: 'DM Mono';">
+        <a href="https://taavi.rubenhagen.com" class="text-[1.75rem] md:text-[2.325rem] font-bold" style="font-family: 'DM Mono';">
             tr.
         </a>
         <p1>
@@ -51,9 +50,9 @@
                 <button
                     on:click={() => downloadVisible = !downloadVisible}
                     class=
-                    "transition-all duration-[100ms] relative
+                    "transition-all duration-[200ms] relative
                     border border-white rounded-full h-10
-                    {scrollY < totalHeightFactorOffset * windowHeight ? ( "hover:bg-opacity-80 " + "bg-black" + " text-white" ) : "hover:opacity-60 bg-white text-black"}
+                    {scrollY < totalHeightFactorOffset * windowHeight - 128 ? ( "hover:bg-opacity-80 " + "bg-black" + " text-white" ) : "hover:opacity-60 bg-white text-black"}
                     px-4 flex justify-center items-center gap-2 text-[0.875rem] sm:text-[1rem] capitalize"
                 >
                     {#if downloadVisible}
@@ -67,7 +66,7 @@
                 <a
                     href="/download"
                     class=
-                    "transition-all duration-[100ms] relative
+                    "transition-all duration-[200ms] relative
                     border border-white rounded-full h-10
                     {scrollY < totalHeightFactorOffset * windowHeight ? ( "hover:bg-opacity-80 " + "bg-black" + " text-white" ) : "hover:opacity-60 bg-white text-black"}
                     px-4 flex justify-center items-center gap-2 text-[0.875rem] sm:text-[1rem] capitalize"
@@ -115,7 +114,7 @@
         {/if}
     </div>
     <div
-        class="relative w-screen pb-[calc(100vh/3)] flex flex-col justify-center items-center"
+        class="relative w-screen pb-[calc(42.5vh)] md:pb-[calc(35vh)] flex flex-col justify-center items-center"
         style="height: {totalHeightFactor * 100}vh;"
     >
         <img
