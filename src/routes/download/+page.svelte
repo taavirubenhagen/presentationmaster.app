@@ -34,7 +34,7 @@
             Any questions?
         </a>
         𐄁
-        <a href="imprint.rubenhagen.com" class="transition-all duration-[100ms] hover:opacity-80 underline underline-offset-8">
+        <a href="https://imprint.rubenhagen.com" class="transition-all duration-[100ms] hover:opacity-80 underline underline-offset-8">
             Imprint
         </a>
     </p1>
