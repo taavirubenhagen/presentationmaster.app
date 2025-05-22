@@ -12,7 +12,7 @@
 >
     <p1>
         <a
-            download href="/presenter/Presentation Master 2.msi"
+            download href="/Presentation Master 2.msi"
             class=
             "transition-all duration-[200ms] relative
             border border-white rounded-full h-10 hover:opacity-80
